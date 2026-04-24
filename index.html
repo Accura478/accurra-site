@@ -6,75 +6,75 @@
     <title>Accurra - Biuro Rachunkowe Polska & UE</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .logo-img { max-height: 80px; width: auto; object-fit: contain; }
+        .logo-img { max-height: 60px; width: auto; object-fit: contain; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <img src="logo.png" alt="Accurra" class="logo-img" onerror="this.src='https://via.placeholder.com/200x80?text=ACCURRA+OUTSOURCING'">
+            <img src="logo.png" alt="Accurra" class="logo-img" onerror="this.src='https://via.placeholder.com/200x80?text=ACCURRA'">
             <div class="hidden md:flex space-x-6 text-sm font-medium uppercase tracking-wider text-teal-900">
                 <a href="#services" class="hover:text-teal-600">Usługi</a>
                 <a href="#contact" class="hover:text-teal-600">Kontakt</a>
             </div>
-            <a href="#contact" class="bg-teal-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-teal-800">Kontakt</a>
+            <a href="#contact" class="bg-teal-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-teal-800 transition">Kontakt</a>
         </div>
     </nav>
 
-    <header class="bg-white py-16 md:py-24 border-b border-slate-100">
+    <header class="bg-white py-12 md:py-24 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-teal-950 leading-tight mb-6">
+            <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-teal-950 leading-tight mb-4 md:mb-6">
                     Księgowość online <br><span class="text-teal-600">w całej Polsce i UE</span>
                 </h1>
-                <p class="text-lg text-slate-600 mb-8 max-w-lg">
-    Profesjonalne wsparcie księgowe bez granic. Specjalizujemy się w obsłudze JDG, spółek z o.o. oraz rejestracji firm (S24/CEIDG).
-</p>
+                <p class="text-base md:text-lg text-slate-600 mb-6 md:mb-8 mx-auto md:mx-0 max-w-lg">
+                    Profesjonalne wsparcie księgowe bez granic. Specjalizujemy się w obsłudze JDG, spółek z o.o. oraz rejestracji firm (S24/CEIDG).
+                </p>
                 <a href="#services" class="inline-block bg-teal-900 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-teal-800 transition">Sprawdź usługi</a>
             </div>
-            <div class="md:w-1/2 flex justify-center">
-                <img src="logo.png" alt="Accurra Logo" class="max-h-[300px] w-auto drop-shadow-none -mt-16" onerror="this.style.display='none'">
+            <div class="w-full md:w-1/2 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
+                <img src="logo.png" alt="Accurra Logo" class="max-h-[200px] md:max-h-[300px] w-auto drop-shadow-md" onerror="this.style.display='none'">
             </div>
         </div>
     </header>
 
     <section id="services" class="py-20 max-w-6xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-12 text-teal-950 uppercase tracking-tight">W czym pomagamy?</h2>
-        <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                 <div class="text-teal-600 text-3xl mb-4">📄</div>
                 <h3 class="font-bold text-xl mb-3">Księgowość JDG</h3>
-                <p class="text-slate-600 text-sm">Pełne wsparcie dla jednoosobowych firm. Podatki, ZUS i konsultacje.</p>
+                <p class="text-slate-600 text-sm">Pełne wsparcie dla jednoosobowych działalności. Podatki, ZUS i profesjonalne konsultacje.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                 <div class="text-teal-600 text-3xl mb-4">🏢</div>
                 <h3 class="font-bold text-xl mb-3">Spółki z o.o.</h3>
-                <p class="text-slate-600 text-sm">Pełna księgowość, sprawozdania i optymalizacja dla Twojej spółki.</p>
+                <p class="text-slate-600 text-sm">Pełna księgowość, sprawozdania finansowe i optymalizacja podatkowa dla Twojej spółki.</p>
             </div>
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
                 <div class="text-teal-600 text-3xl mb-4">🚀</div>
-                <h3 class="font-bold text-xl mb-3">Rejestracja</h3>
-                <p class="text-slate-600 text-sm">Szybka rejestracja Spółek i JDG. Pomagamy od A do Z.</p>
+                <h3 class="font-bold text-xl mb-3">Rejestracja firm</h3>
+                <p class="text-slate-600 text-sm">Szybka i bezproblemowa rejestracja Spółek oraz JDG. Pomagamy na każdym etapie.</p>
             </div>
         </div>
     </section>
 
     <footer id="contact" class="bg-teal-950 text-slate-300 py-16 px-4">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 border-b border-teal-900 pb-12">
-            <div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-teal-900 pb-12">
+            <div class="text-center md:text-left">
                 <h3 class="text-white font-bold text-xl mb-4 uppercase tracking-wider">Accurra Sp. z o.o.</h3>
-                <p class="mb-1">ul. Marcina Kasprzaka 31 / 119</p>
-                <p class="mb-4">01-234 Warszawa</p>
-                <p class="text-xs opacity-60 uppercase">KRS: 0001180338 | NIP: 5273170577</p>
+                <p class="mb-1 text-sm md:text-base">ul. Marcina Kasprzaka 31 / 119</p>
+                <p class="mb-4 text-sm md:text-base">01-234 Warszawa</p>
+                <p class="text-[10px] md:text-xs opacity-60 uppercase">KRS: 0001180338 | NIP: 5273170577</p>
                 <div class="mt-6">
-                    <a href="mailto:accurra.pl@gmail.com" class="text-pink-500 font-bold hover:underline">accurra.pl@gmail.com</a>
+                    <a href="mailto:accurra.pl@gmail.com" class="text-pink-400 font-bold hover:text-pink-300 transition-colors">accurra.pl@gmail.com</a>
                 </div>
             </div>
             
             <div class="flex flex-col items-center md:items-end space-y-8">
                 <div class="text-center bg-white/5 border border-pink-500/30 p-8 rounded-3xl transition-all hover:border-pink-500 w-full max-w-sm">
-                    <a href="tel:+48111111111" class="text-4xl font-black text-white hover:text-pink-400 transition-colors block">
+                    <a href="tel:+48111111111" class="text-3xl md:text-4xl font-black text-white hover:text-pink-400 transition-colors block">
                         111 111 111
                     </a>
                     <p class="text-xl text-gray-400 mt-2">Olga</p>
@@ -82,13 +82,13 @@
 
                 <div class="flex flex-wrap justify-center md:justify-end gap-10">
                     <div class="text-center">
-                        <a href="tel:+48222222222" class="text-2xl font-bold text-white hover:text-pink-400 transition-colors block">
+                        <a href="tel:+48222222222" class="text-xl md:text-2xl font-bold text-white hover:text-pink-400 transition-colors block">
                             222 222 222
                         </a>
                         <p class="text-sm text-gray-500 mt-1">Krystyna</p>
                     </div>
                     <div class="text-center">
-                        <a href="tel:+48333333333" class="text-2xl font-bold text-white hover:text-pink-400 transition-colors block">
+                        <a href="tel:+48333333333" class="text-xl md:text-2xl font-bold text-white hover:text-pink-400 transition-colors block">
                             333 333 333
                         </a>
                         <p class="text-sm text-gray-500 mt-1">Natalia</p>
