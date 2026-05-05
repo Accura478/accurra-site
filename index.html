@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accurra - Biuro Rachunkowe Polska & UE</title>
+    <!-- SEO: Мета-теги для продвижения в Польше -->
+    <title>Accurra - Biuro Rachunkowe w Warszawie | Księgowość Online Polska & UE</title>
+    <meta name="description" content="Profesjonalna obsługa księgowa dla JDG i Spółek z o.o. Rejestracja firm, optymalizacja podatkowa i doradztwo. Biuro rachunkowe Accurra - Twój partner w biznesie.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .logo-img { max-height: 60px; width: auto; object-fit: contain; }
+        /* Плавный скролл к якорям */
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
 
+    <!-- Навигация -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <img src="logo.png" alt="Accurra" class="logo-img" onerror="this.src='https://via.placeholder.com/200x80?text=ACCURRA'">
             <div class="hidden md:flex space-x-6 text-sm font-medium uppercase tracking-wider text-teal-900">
-                <a href="#services" class="hover:text-teal-600">Usługi</a>
-                <a href="#contact" class="hover:text-teal-600">Kontakt</a>
+                <a href="#services" class="hover:text-teal-600 transition">Usługi</a>
+                <a href="#contact-form" class="hover:text-teal-600 transition">Bezpłatna konsultacja</a>
+                <a href="#contact" class="hover:text-teal-600 transition">Kontakt</a>
             </div>
-            <a href="#contact" class="bg-teal-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-teal-800 transition">Kontakt</a>
+            <a href="#contact-form" class="bg-teal-900 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-teal-800 transition">Zacznij teraz</a>
         </div>
     </nav>
 
+    <!-- Главный экран -->
     <header class="bg-white py-12 md:py-24 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
             <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
@@ -29,9 +37,12 @@
                     Księgowość online <br><span class="text-teal-600">w całej Polsce i UE</span>
                 </h1>
                 <p class="text-base md:text-lg text-slate-600 mb-6 md:mb-8 mx-auto md:mx-0 max-w-lg">
-                    Profesjonalne wsparcie księgowe bez granic. Specjalizujemy się w obsłudze JDG, spółek z o.o. oraz rejestracji firm (S24/CEIDG).
+                    Profesjonalne wsparcie księgowe bez granic. Specjalizujemy się в obsłudze JDG, spółek z o.o. oraz rejestracji firm (S24/CEIDG).
                 </p>
-                <a href="#services" class="inline-block bg-teal-900 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-teal-800 transition">Sprawdź usługi</a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#services" class="bg-teal-900 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-teal-800 transition text-center">Sprawdź usługi</a>
+                    <a href="tel:+48111111111" class="border-2 border-teal-900 text-teal-900 px-8 py-4 rounded-lg font-bold hover:bg-teal-50 transition text-center">Zadzwoń do nas</a>
+                </div>
             </div>
             <div class="w-full md:w-1/2 flex justify-center order-1 md:order-2 mb-8 md:mb-0">
                 <img src="logo.png" alt="Accurra Logo" class="max-h-[200px] md:max-h-[300px] w-auto drop-shadow-md" onerror="this.style.display='none'">
@@ -39,28 +50,56 @@
         </div>
     </header>
 
+    <!-- Услуги -->
     <section id="services" class="py-20 max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-12 text-teal-950 uppercase tracking-tight">W czym pomagamy?</h2>
+        <h2 class="text-3xl font-bold mb-12 text-teal-950 uppercase tracking-tight italic">W czym możemy Ci pomóc?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="text-teal-600 text-3xl mb-4">📄</div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                <div class="text-teal-600 text-3xl mb-4 group-hover:scale-110 transition-transform">📄</div>
                 <h3 class="font-bold text-xl mb-3">Księgowość JDG</h3>
-                <p class="text-slate-600 text-sm">Pełne wsparcie dla jednoosobowych działalności. Podatki, ZUS i profesjonalne konsultacje.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Pełne wsparcie dla jednoosobowych działalności. Podatki, ZUS i profesjonalne konsultacje, abyś mógł spać spokojnie.</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="text-teal-600 text-3xl mb-4">🏢</div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                <div class="text-teal-600 text-3xl mb-4 group-hover:scale-110 transition-transform">🏢</div>
                 <h3 class="font-bold text-xl mb-3">Spółki z o.o.</h3>
-                <p class="text-slate-600 text-sm">Pełna księgowość, sprawozdania finansowe i optymalizacja podatkowa dla Twojej spółki.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Pełna księgowość, sprawozdania finansowe i optymalizacja podatkowa dopasowana do skali Twojej firmy.</p>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                <div class="text-teal-600 text-3xl mb-4">🚀</div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition group">
+                <div class="text-teal-600 text-3xl mb-4 group-hover:scale-110 transition-transform">🚀</div>
                 <h3 class="font-bold text-xl mb-3">Rejestracja firm</h3>
-                <p class="text-slate-600 text-sm">Szybka i bezproblemowa rejestracja Spółek oraz JDG. Pomagamy na każdym etapie.</p>
+                <p class="text-slate-600 text-sm leading-relaxed">Szybka i bezproblemowa rejestracja Spółek oraz JDG. Pomagamy przebrnąć przez formalności w S24 и CEIDG.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-teal-950 text-slate-300 py-16 px-4">
+    <!-- Секция обратной связи -->
+    <section id="contact-form" class="py-24 bg-slate-900 px-4">
+        <div class="max-w-xl mx-auto bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm">
+            <h2 class="text-3xl font-black mb-2 text-white text-center uppercase tracking-tighter italic">Zostaw zgłoszenie</h2>
+            <p class="text-gray-400 text-center mb-8 text-sm">Oddzwonimy w ciągu 30 minut, no... chyba że jest środek nocy.</p>
+            
+            <form id="tgForm" class="space-y-4">
+                <input type="text" id="name" placeholder="Twoje imię" required 
+                    class="w-full p-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-gray-500 focus:outline-pink-500 transition-all focus:bg-white/20">
+                
+                <input type="tel" id="phone" placeholder="Twój telefon" required 
+                    class="w-full p-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-gray-500 focus:outline-pink-500 transition-all focus:bg-white/20">
+                
+                <textarea id="message" placeholder="Wiadomość (opcjonalnie)" rows="3" 
+                    class="w-full p-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder:text-gray-500 focus:outline-pink-500 transition-all focus:bg-white/20"></textarea>
+                
+                <button type="submit" id="submitBtn" 
+                    class="w-full bg-pink-600 hover:bg-pink-500 text-white py-4 rounded-2xl font-black text-lg transition-all transform active:scale-95 shadow-lg shadow-pink-600/20">
+                    Wyślij zapytanie
+                </button>
+            </form>
+            
+            <div id="formStatus" class="mt-6 text-center font-bold hidden"></div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contact" class="bg-teal-950 text-slate-300 py-16 px-4 border-t border-white/5">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-teal-900 pb-12">
             <div class="text-center md:text-left">
                 <h3 class="text-white font-bold text-xl mb-4 uppercase tracking-wider">Accurra Sp. z o.o.</h3>
@@ -73,7 +112,6 @@
             </div>
             
             <div class="flex flex-col items-center md:items-end space-y-8">
-                
                 <div class="text-center w-full max-w-sm">
                     <a href="tel:+48111111111" class="text-3xl md:text-4xl font-black text-pink-500 hover:text-pink-400 transition-colors block">
                         111 111 111
@@ -87,13 +125,6 @@
                     </a>
                     <p class="text-xl text-gray-400 mt-1 font-bold">Krystyna</p>
                 </div>
-
-                <div class="text-center w-full max-w-sm">
-                    <a href="tel:+48333333333" class="text-3xl md:text-4xl font-black text-white hover:text-pink-400 transition-colors block">
-                        333 333 333
-                    </a>
-                    <p class="text-xl text-gray-400 mt-1 font-bold">Natalia</p>
-                </div>
             </div>
         </div>
         <div class="max-w-6xl mx-auto pt-8 text-center text-[10px] uppercase tracking-[0.3em] opacity-40">
@@ -101,5 +132,47 @@
         </div>
     </footer>
 
+    <!-- Скрипт отправки данных -->
+    <script>
+        const form = document.getElementById('tgForm');
+        const status = document.getElementById('formStatus');
+        const btn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            btn.disabled = true;
+            btn.textContent = 'Wysyłanie...';
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                const response = await fetch('/api/send-message', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                status.classList.remove('hidden');
+                if (response.ok) {
+                    status.textContent = '✅ Dziękujemy! Zgłoszenie zostało wysłane.';
+                    status.className = 'mt-6 text-center font-bold text-green-400';
+                    form.reset();
+                } else {
+                    throw new Error();
+                }
+            } catch (error) {
+                status.textContent = '❌ Błąd. Spróbuj ponownie za chwilę.';
+                status.className = 'mt-6 text-center font-bold text-red-400';
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Wyślij zapytanie';
+            }
+        });
+    </script>
 </body>
 </html>
