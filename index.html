@@ -9,6 +9,43 @@
     <style>
         .logo-img { max-height: 60px; width: auto; object-fit: contain; }
         html { scroll-behavior: smooth; }
+
+        /* Липкая кнопка для мобилок (Step 1) */
+        .mobile-sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
+            z-index: 9999;
+            display: none; /* На десктопе скрыта по умолчанию */
+        }
+
+        .btn-sticky-tg {
+            display: block;
+            background-color: #24A1DE; /* Фирменный цвет Telegram */
+            color: #ffffff !important;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s ease;
+        }
+
+        .btn-sticky-tg:active {
+            transform: scale(0.98);
+        }
+
+        /* Показываем кнопку только на экранах смартфонов */
+        @media (max-width: 768px) {
+            .mobile-sticky-cta {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
@@ -141,6 +178,13 @@
         </div>
     </footer>
 
+    <!-- Мобильная липкая кнопка связи (Step 1) -->
+    <div class="mobile-sticky-cta">
+        <a href="https://t.me/+48536348748" target="_blank" class="btn-sticky-tg">
+            💬 Написать в Telegram
+        </a>
+    </div>
+
     <script>
         const form = document.getElementById('tgForm');
         const status = document.getElementById('formStatus');
@@ -180,6 +224,9 @@
                 btn.textContent = 'Wyślij zapytanie / Отправить';
             }
         });
+    </script>
+</body>
+</html>
     </script>
 </body>
 </html>
