@@ -121,7 +121,7 @@
         </div>
     </section>
 
-    <!-- Секция реальных отзывов из Google Maps (идеально выровненные карточки) -->
+    <!-- Секция реальных отзывов из Google Maps -->
     <section class="py-16 bg-white border-y border-slate-100">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
@@ -293,7 +293,9 @@
                 status.className = 'mt-6 text-center font-bold text-red-400';
             } finally {
                 btn.disabled = false;
-                btn
-            </div>
-        </div>
-    </section>
+                btn.textContent = 'Wyślij zapytanie / Отправить';
+            }
+        });
+    </script>
+</body>
+</html>
